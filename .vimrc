@@ -20,6 +20,7 @@ set autoindent
 
 "Key Mappings
 imap jj <Esc>
+inoremap <Nul> <C-n>	"Remaps <c-space> to autocomplete
 
 "Highlight whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
