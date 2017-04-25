@@ -7,6 +7,15 @@ set showmode
 
 syntax on		"Coulors!!!
 
+"General setup
+set nocompatible
+syntax enable
+filetype plugin on
+
+"Fuzzy file search
+set path+=**
+set wildmenu
+
 set autoindent
 
 "Key Mappings
