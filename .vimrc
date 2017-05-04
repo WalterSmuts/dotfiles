@@ -7,6 +7,9 @@ set showmode
 
 syntax on		"Coulors!!!
 
+"Ctags on save
+autocmd BufWritePost *.cpp,*.h call system("ctags -R")
+
 "General setup
 set nocompatible
 syntax enable
@@ -20,7 +23,7 @@ set autoindent
 
 "Key Mappings
 imap jj <Esc>
-inoremap <Nul> <C-n>	"Remaps <c-space> to autocomplete
+inoremap <Nul> <C-n>
 
 "Highlight whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
