@@ -5,7 +5,20 @@ set scrolloff=8		"Sets min scroll buffer to 8
 set showcmd
 set showmode
 
+"Pathogen Support
+execute pathogen#infect()
+
 syntax on		"Coulors!!!
+
+"Syntanstic to follow
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 "Ctags on save
 autocmd BufWritePost *.cpp,*.h call system("ctags -R")
@@ -18,8 +31,6 @@ filetype plugin on
 "Fuzzy file search
 set path+=**
 set wildmenu
-
-set autoindent
 
 "Key Mappings
 imap jj <Esc>
@@ -35,3 +46,18 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
+
+"Powerline
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
+
+"STOP USING ARROWS!
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
