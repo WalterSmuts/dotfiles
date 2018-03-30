@@ -88,7 +88,6 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias vi=vim
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -106,6 +105,10 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# Even More Aliases
+alias vi=vim
+alias pacman='sudo pacman'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
