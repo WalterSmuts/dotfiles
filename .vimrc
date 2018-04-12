@@ -5,6 +5,8 @@ set scrolloff=8		"Sets min scroll buffer to 8
 set showcmd
 set showmode
 
+set enc=utf-8
+
 "Pathogen Support
 execute pathogen#infect()
 
