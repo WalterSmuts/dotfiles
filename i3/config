@@ -129,6 +129,10 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+# Move Workspace between monitors
+bindsym $mod+Control+j move workspace to output left
+bindsym $mod+Control+semicolon move workspace to output right
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
 bindsym $mod+Shift+2 move container to workspace $ws2
