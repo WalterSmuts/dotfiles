@@ -1,4 +1,4 @@
 # dotfiles
-Markup :
-	* .vimrc
-	* .bashrc
+* .vimrc
+* .bashrc
+* .config/i3/config
