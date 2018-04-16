@@ -101,8 +101,8 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 Firefox"
-set $ws2 "2 Terminal"
-set $ws3 "3 VLC"
+set $ws2 "2 Work"
+set $ws3 "3 Video"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -183,7 +183,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	position top
-        status_command ~/.config/i3-pystatus.py
+        status_command i3status
 }
 
 exec_always --no-startup-id compton -f
