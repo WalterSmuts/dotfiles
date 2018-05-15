@@ -35,6 +35,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightnes
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+#Toggle external monitor
+bindsym $mod+s exec toggle-extra-monitor
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -172,7 +175,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
 	position top
-        status_command i3status
+        status_command i3status-proxy
 }
 
 exec_always --no-startup-id compton -f
