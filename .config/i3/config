@@ -176,4 +176,4 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id feh --bg-scale ~/Wallpapers/arch.png
-exec_always --no-startup-id polybar-start
+exec_always --no-startup-id polybar-start.sh
