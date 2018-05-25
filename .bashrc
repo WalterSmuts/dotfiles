@@ -124,3 +124,6 @@ fi
 
 export NVM_DIR="/home/walter/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Add scripting directory to path
+export PATH=$HOME/Programs/custom-scirpts/:$PATH
