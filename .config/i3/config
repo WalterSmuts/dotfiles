@@ -92,7 +92,7 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1 Firefox"
+set $ws1 "1 Chrome"
 set $ws2 "2 Work"
 set $ws3 "3 Video"
 set $ws4 "4"

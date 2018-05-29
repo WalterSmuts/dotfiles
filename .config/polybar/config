@@ -113,7 +113,7 @@ index-sort = true
 wrapping-scroll = false
 
 ; Workspace icons
-ws-icon-0 = 1 Firefox;
+ws-icon-0 = 1 Chrome;
 ws-icon-1 = 2 Work;
 ws-icon-2 = 3 Video;
 ws-icon-3 = 9 Gaming;
