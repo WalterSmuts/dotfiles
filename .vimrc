@@ -50,7 +50,7 @@ if has("autocmd")
 endif
 
 "Powerline
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+let g:powerline_pycmd="py3"
 set laststatus=2
 set t_Co=256
 
