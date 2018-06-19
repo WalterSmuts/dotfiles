@@ -144,6 +144,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+#Lock Screen and Suspend
+bindsym $mod+F1 exec suspend-script
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -177,3 +180,4 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id feh --bg-scale ~/Wallpapers/arch.png
 exec_always --no-startup-id polybar-start
+exec_always --no-startup-id xautolock -corners -000 -time 10 -locker lock-script
