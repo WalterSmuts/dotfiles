@@ -10,7 +10,8 @@ set enc=utf-8
 "Pathogen Support
 execute pathogen#infect()
 
-syntax on		"Coulors!!!
+"Coulors!!!
+syntax on
 
 "Syntanstic to follow
 set statusline+=%#warningmsg#
@@ -20,7 +21,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_compiler_options = ' -std=c++11'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 `sdl2-config --cflags --libs`'
 
 "Ctags on save
 autocmd BufWritePost *.cpp,*.h call system("ctags -R")
