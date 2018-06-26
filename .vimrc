@@ -31,8 +31,9 @@ set nocompatible
 syntax enable
 filetype plugin on
 
-"Fuzzy file search
-set path+=**
+" Menu configuration
+set wildmode=longest,list	"bash-like
+set path+=**			"Fuzzy file-search
 set wildmenu
 
 "Key Mappings
@@ -42,6 +43,11 @@ inoremap <Nul> <C-n>
 "Highlight whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+
+"Pattern Matching
+set smartcase
+set hlsearch
+set incsearch
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
