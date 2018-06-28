@@ -13,6 +13,9 @@ execute pathogen#infect()
 "Coulors!!!
 syntax on
 
+"Hex Coulors
+call pathogen#infect('~/.vim/bundle{}')
+
 "Syntanstic to follow
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
