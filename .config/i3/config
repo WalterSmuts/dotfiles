@@ -182,3 +182,8 @@ exec_always --no-startup-id feh --bg-scale ~/Wallpapers/arch.png
 exec_always --no-startup-id polybar-start
 exec_always --no-startup-id xautolock -corners -000 -time 10 -locker lock-script
 exec_always --no-startup-id nm-applet
+
+# Map the caps lock key to super.
+exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option caps:super
+# But when it is pressed only once, treat it as escape.
+exec_always --no-startup-id xcape -e 'Super_L=Escape'
