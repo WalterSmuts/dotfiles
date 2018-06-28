@@ -1,6 +1,3 @@
 # dotfiles
-* .vimrc
-* .bashrc
-* .xinitrc
-* .config/i3/config
-* .config/polybar/config
+Example of general display using these config files
+![Why do I need text here?](https://github.com/WalterSmuts/dotfiles/blob/master/example.png "Example Desktop")
