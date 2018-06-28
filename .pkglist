@@ -7,6 +7,8 @@ colordiff
 compton
 cups
 dialog
+efibootmgr
+expac
 feh
 gimp
 git
@@ -14,8 +16,10 @@ grub
 gvim
 htop
 i3lock
+i3-wm
 intel-ucode
 iotop
+jshon
 julia
 nethogs
 network-manager-applet
@@ -36,12 +40,17 @@ tmux
 ttf-dejavu
 ttf-font-awesome
 ttf-liberation
+unzip
 vlc
+wget
+wireless_tools
 wpa_supplicant
 xautolock
+xcape
 xf86-video-intel
 xorg-server
 xorg-xbacklight
 xorg-xinit
 xorg-xinput
+xorg-xprop
 youtube-dl
