@@ -1,0 +1,9 @@
+*foreground: gray
+*foreground_bold: #a8a19f
+*cursor: #a8a19f
+
+URxvt.intensityStyles:	false
+URxvt.background:       #000000
+URxvt.depth:		32
+URxvt.font: 		xft:monospace:size=13
+URxvt.scrollBar:	false
