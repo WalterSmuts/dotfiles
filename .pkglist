@@ -1,6 +1,8 @@
 audacity
 baobab
 bash-completion
+blueman
+bluez-utils
 chromium
 cmake
 colordiff
@@ -31,6 +33,7 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 ranger
 rofi
+screenfetch
 scrot
 sdl
 sdl2_image

@@ -24,9 +24,9 @@ for_window [class="^.*"] border pixel 1
 new_window 1pixel
 
 # Pulse Audio controls
-bindsym F12 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym F11 exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym F10 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym F12 exec --no-startup-id inc-volume
+bindsym F11 exec --no-startup-id dec-volume
+bindsym F10 exec --no-startup-id toggle-mute-sound
 
 # Sreen brightness controls
 bindsym F6 exec xbacklight -inc 5 # increase screen brightness
@@ -45,7 +45,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+shift+q kill
 
 # start rofi
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
+bindsym $mod+d exec rofi -show run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -182,6 +182,7 @@ exec_always --no-startup-id feh --bg-scale ~/Wallpapers/arch.png
 exec_always --no-startup-id polybar-start
 exec_always --no-startup-id xautolock -corners -000 -time 10 -locker lock-script
 exec_always --no-startup-id nm-applet
+exec_always --no-startup-id blueman-applet
 
 # Map the caps lock key to super.
 exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option caps:super
