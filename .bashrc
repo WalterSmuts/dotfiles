@@ -109,6 +109,9 @@ alias pacman='sudo pacman'
 # Set Default Programs
 export EDITOR=vim
 
+# List hidden files first
+export LC_COLLATE="C"
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).

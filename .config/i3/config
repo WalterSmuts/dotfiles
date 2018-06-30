@@ -27,6 +27,7 @@ new_window 1pixel
 bindsym F12 exec --no-startup-id inc-volume
 bindsym F11 exec --no-startup-id dec-volume
 bindsym F10 exec --no-startup-id toggle-mute-sound
+bindsym $mod+a exec --no-startup-id toggle-audio-sink
 
 # Sreen brightness controls
 bindsym F6 exec xbacklight -inc 5 # increase screen brightness
@@ -35,11 +36,17 @@ bindsym F5 exec xbacklight -dec 5 # decrease screen brightnes
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-#Toggle external monitor
+# Toggle external monitor
 bindsym $mod+s exec toggle-extra-monitor
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
+
+# Start ranger
+bindsym $mod+space exec i3-sensible-terminal -e ranger
+
+# Start Music Player Client
+bindsym $mod+m exec start-ncmpcpp
 
 # kill focused window
 bindsym $mod+shift+q kill
@@ -84,9 +91,6 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# focus the parent container
-bindsym $mod+a focus parent
-
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -107,7 +111,6 @@ set $ws10 "10 Music"
 assign [class="Chromium"] $ws1
 assign [class="vlc"] $ws3
 assign [class="Steam"] $ws9
-assign [class="Google Play Music Desktop Player"] $ws10
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
