@@ -30,14 +30,14 @@ bindsym F10 exec --no-startup-id toggle-mute-sound
 bindsym $mod+a exec --no-startup-id toggle-audio-sink
 
 # Sreen brightness controls
-bindsym F6 exec xbacklight -inc 5 # increase screen brightness
-bindsym F5 exec xbacklight -dec 5 # decrease screen brightnes
+bindsym F6 exec --no-startup-id xbacklight -inc 5 # increase screen brightness
+bindsym F5 exec --no-startup-id xbacklight -dec 5 # decrease screen brightnes
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # Toggle external monitor
-bindsym $mod+s exec toggle-extra-monitor
+bindsym $mod+s exec --no-startup-id toggle-extra-monitor
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
