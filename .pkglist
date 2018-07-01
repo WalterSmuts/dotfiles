@@ -17,12 +17,14 @@ git
 grub
 gvim
 htop
-i3lock
 i3-wm
+i3lock
 intel-ucode
 iotop
 jshon
 julia
+mpd
+ncmpcpp
 nethogs
 network-manager-applet
 octave
@@ -40,6 +42,7 @@ sdl2_image
 sdl2_ttf
 steam
 tmux
+transmission-qt
 ttf-dejavu
 ttf-font-awesome
 ttf-liberation
