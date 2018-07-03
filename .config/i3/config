@@ -181,7 +181,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 exec_always --no-startup-id compton -f
-exec_always --no-startup-id feh --bg-scale ~/Wallpapers/arch.png
+exec_always --no-startup-id feh --bg-scale --randomize ~/Wallpapers/*
 exec_always --no-startup-id polybar-start
 exec_always --no-startup-id xautolock -corners -000 -time 10 -locker lock-script
 exec_always --no-startup-id nm-applet
