@@ -58,6 +58,9 @@ bindsym $mod+d exec rofi -show run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# Stop movement wrapping on edges
+focus_wrapping no
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
