@@ -33,7 +33,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-padding-left = 0
+padding-left = 2
 padding-right = 2
 
 module-margin-left = 1
@@ -46,7 +46,7 @@ font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
 font-5 = "Font Awesome 5 Brands:pixelsize=8;1"
 
-modules-left = network wlan eth xbacklight
+modules-left = wlan gmail eth xbacklight network
 modules-center = i3
 modules-right = volume filesystem cpu battery temperature date powermenu
 
@@ -82,6 +82,12 @@ mount-0 = /
 format-mounted-underline = #f90000
 label-mounted = SSD: %free%
 label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/gmail]
+type = custom/script
+exec = ~/.config/polybar/gmail/launch.py
+tail = true
+click-left = xdg-open https://inbox.google.com
 
 [module/bspwm]
 type = internal/bspwm
