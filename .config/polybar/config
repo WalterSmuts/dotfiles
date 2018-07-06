@@ -48,7 +48,7 @@ font-5 = "Font Awesome 5 Brands:pixelsize=8;1"
 
 modules-left = wlan gmail eth xbacklight network
 modules-center = i3
-modules-right = volume filesystem cpu battery temperature date powermenu
+modules-right = sound-sink volume filesystem cpu battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -88,6 +88,11 @@ type = custom/script
 exec = ~/.config/polybar/gmail/launch.py
 tail = true
 click-left = xdg-open https://inbox.google.com
+
+[module/sound-sink]
+type = custom/script
+exec = show-sound-sink
+interval = 0.1
 
 [module/bspwm]
 type = internal/bspwm
@@ -293,7 +298,7 @@ label-volume = 
 label-volume-foreground = ${root.foreground}
 
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = ------------------------------------
+label-muted =  ──────────────────
 
 bar-volume-width = 21
 bar-volume-foreground-0 = #55aa55
