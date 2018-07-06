@@ -8,6 +8,7 @@ cmake
 colordiff
 compton
 cups
+cups-pdf
 dialog
 efibootmgr
 expac
@@ -21,6 +22,7 @@ i3-wm
 i3lock
 intel-ucode
 iotop
+iw
 jshon
 julia
 mpd
@@ -33,6 +35,7 @@ powerline-fonts
 powerline-vim
 pulseaudio-alsa
 pulseaudio-bluetooth
+python-pip
 ranger
 rofi
 screenfetch
@@ -41,6 +44,7 @@ sdl
 sdl2_image
 sdl2_ttf
 steam
+system-config-printer
 tmux
 transmission-qt
 ttf-dejavu
