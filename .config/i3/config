@@ -29,6 +29,11 @@ bindsym F11 exec --no-startup-id dec-volume
 bindsym F10 exec --no-startup-id toggle-mute-sound
 bindsym $mod+a exec --no-startup-id toggle-audio-sink
 
+# MPD Control
+bindsym $mod+p exec --no-startup-id mpc toggle
+bindsym $mod+braceright exec --no-startup-id mpc next
+bindsym $mod+braceleft exec --no-startup-id mpc prev
+
 # Sreen brightness controls
 bindsym F6 exec --no-startup-id xbacklight -inc 5 # increase screen brightness
 bindsym F5 exec --no-startup-id xbacklight -dec 5 # decrease screen brightnes
