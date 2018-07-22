@@ -65,7 +65,7 @@ set laststatus=2
 set t_Co=256
 
 "Tex Default Viewer
-let g:livepreview_previewer = 'llpp.inotify'
+let g:livepreview_previewer = 'mupdf.inotify'
 set updatetime=500
 
 "Vim Spelling
