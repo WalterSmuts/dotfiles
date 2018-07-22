@@ -64,6 +64,14 @@ let g:powerline_pycmd="py3"
 set laststatus=2
 set t_Co=256
 
+"Tex Default Viewer
+let g:livepreview_previewer = 'llpp.inotify'
+set updatetime=500
+
+"Vim Spelling
+set spell spelllang=en
+set spell
+
 "STOP USING ARROWS!
 noremap <Up> <nop>
 noremap <Down> <nop>
