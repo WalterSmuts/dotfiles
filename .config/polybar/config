@@ -25,7 +25,9 @@ width = 100%
 height = 30
 ;offset-x = 1%
 ;offset-y = 1%
-fixed-center = false
+fixed-center = true
+border-bottom-size = 2
+border-bottom-color = #000000
 
 background = ${colors.background}
 foreground = ${colors.foreground}
