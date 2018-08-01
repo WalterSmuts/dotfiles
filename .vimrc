@@ -29,6 +29,9 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 `sdl2-config --cflags --libs
 "Ctags on save
 autocmd BufWritePost *.cpp,*.h call system("ctags -R")
 
+"Latex Start pdf preview on open
+au BufEnter *.tex :LLPStartPreview
+
 "General setup
 set nocompatible
 syntax enable
