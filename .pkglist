@@ -34,6 +34,7 @@ mupdf
 ncmpcpp
 nethogs
 network-manager-applet
+noto-fonts-emoji
 octave
 pavucontrol
 powerline-fonts
@@ -74,6 +75,7 @@ wireless_tools
 wpa_supplicant
 xautolock
 xcape
+xclip
 xf86-video-intel
 xorg-server
 xorg-xbacklight
