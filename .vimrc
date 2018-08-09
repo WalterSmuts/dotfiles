@@ -84,3 +84,5 @@ inoremap <Up> <nop>
 inoremap <Down> <nop>
 inoremap <Left> <nop>
 inoremap <Right> <nop>
+
+set clipboard=unnamedplus
