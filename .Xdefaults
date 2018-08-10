@@ -8,5 +8,8 @@
 URxvt.intensityStyles:	false
 URxvt.background:       #000000
 URxvt.depth:		32
-URxvt.font: 		xft:monospace:size=13
 URxvt.scrollBar:	false
+URxvt.font:            xft:Hack:pixelsize=18,\
+                       xft:DejaVu Sans Mono:pixelsize:18,\
+                       xft:Unifont:pixelsize:16,\
+                       -*-unifont-*-*-*-*-*-*-*-*-*-*-*-*
