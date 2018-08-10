@@ -75,6 +75,11 @@ set updatetime=500
 set spell spelllang=en
 set spell
 
+" Octave syntax
+augroup filetypedetect
+  au! BufRead,BufNewFile *.m,*.oct set filetype=octave
+augroup END
+
 "STOP USING ARROWS!
 noremap <Up> <nop>
 noremap <Down> <nop>
