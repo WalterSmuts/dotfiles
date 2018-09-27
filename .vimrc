@@ -73,7 +73,7 @@ set updatetime=500
 
 "Vim Spelling
 set spell spelllang=en
-set spell
+syntax spell toplevel
 
 " Octave syntax
 augroup filetypedetect
