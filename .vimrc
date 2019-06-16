@@ -4,6 +4,7 @@ set number		"Displays actual line num at 0
 set scrolloff=8		"Sets min scroll buffer to 8
 set showcmd
 set showmode
+set tw=82
 
 set enc=utf-8
 
@@ -28,9 +29,6 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 `sdl2-config --cflags --libs
 
 "Ctags on save
 autocmd BufWritePost *.cpp,*.h call system("ctags -R")
-
-"Latex Start pdf preview on open
-au BufEnter *.tex :LLPStartPreview
 
 "General setup
 set nocompatible
@@ -91,3 +89,4 @@ inoremap <Left> <nop>
 inoremap <Right> <nop>
 
 set clipboard=unnamedplus
+set tabstop=4 shiftwidth=2 expandtab

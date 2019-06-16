@@ -129,6 +129,10 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
+# Switch workspace relative
+bindsym $mod+q workspace prev
+bindsym $mod+w workspace next
+
 # Move Workspace between monitors
 bindsym $mod+Control+h move workspace to output left
 bindsym $mod+Control+l move workspace to output right
@@ -194,4 +198,4 @@ exec_always --no-startup-id blueman-applet
 # Map the caps lock key to super.
 exec_always --no-startup-id setxkbmap -layout us -variant altgr-intl -option caps:super
 # But when it is pressed only once, treat it as escape.
-exec_always --no-startup-id xcape -e 'Super_L=Escape'
+exec -no-startup-id xcape -e 'Super_L=Escape'

@@ -92,6 +92,7 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 alias diff=colordiff
+alias g='git log --oneline --graph --all'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -131,3 +132,4 @@ export NVM_DIR="/home/walter/.nvm"
 
 # Add scripting directory to path
 export PATH=$HOME/Programs/custom-scirpts/:$PATH
+export PATH=~/.vim/bundle/vim-live-latex-preview/bin:$PATH
