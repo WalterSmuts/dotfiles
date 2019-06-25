@@ -89,7 +89,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = custom/script
 exec = ~/.config/polybar/gmail/launch.py
 tail = true
-click-left = xdg-open https://inbox.google.com
+click-left = xdg-open https://mail.google.com
 
 [module/sound-sink]
 type = custom/script
