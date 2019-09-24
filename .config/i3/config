@@ -198,4 +198,4 @@ exec_always --no-startup-id blueman-applet
 # Map the caps lock key to super.
 exec --no-startup-id setxkbmap -layout us -variant altgr-intl -option caps:super
 # But when it is pressed only once, treat it as escape.
-exec -no-startup-id xcape -e 'Super_L=Escape'
+exec_always --no-startup-id xcape-startup
