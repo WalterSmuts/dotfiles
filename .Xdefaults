@@ -3,7 +3,6 @@
 *color12: #407ee7
 *foreground: gray
 *foreground_bold: #a8a19f
-*cursor: #a8a19f
 
 URxvt.intensityStyles:	false
 URxvt.background:       #000000
