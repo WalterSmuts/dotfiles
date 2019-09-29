@@ -3,6 +3,9 @@
 *color12: #407ee7
 *foreground: gray
 *foreground_bold: #a8a19f
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
 
 URxvt.intensityStyles:	false
 URxvt.background:       #000000
