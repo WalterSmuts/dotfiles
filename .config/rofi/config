@@ -1,10 +1,19 @@
 rofi.hide-scrollbar: 	true
 rofi.fullscreen:	true
-rofi.font: 		DejaVu Serif 20
+rofi.font: 		Hack 30
 rofi.bw:		0
 rofi.padding:		400
 rofi.yoffset:		-300
 rofi.lines: 		5
+
+rofi.kb-row-up:                      Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab
+rofi.kb-row-down:                    Down,Control+j
+rofi.kb-accept-entry:                Control+m,Return,KP_Enter
+rofi.terminal:                       mate-terminal
+rofi.kb-remove-to-eol:               Control+Shift+e
+rofi.kb-mode-next:                   Shift+Right,Control+Tab,Control+l
+rofi.kb-mode-previous:               Shift+Left,Control+Shift+Tab,Control+h
+rofi.kb-remove-char-back:            BackSpace
 
 !Window			inside		border		underline
 rofi.color-window: 	argb:cc0d0d0d, 	#cccccc,	lightgray
