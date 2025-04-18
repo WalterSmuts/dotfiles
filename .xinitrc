@@ -1,8 +1,5 @@
-# Set keyboard repeat rates
-xset r rate 250 50
-
-# Enable 3 finger swiping gestures
-exec fusuma &
-
-# Start i3
+export QT_FONT_DPI=192
+export GDK_SCALE=2
+setxkbmap -option caps:super
+xcape-startup
 exec i3
