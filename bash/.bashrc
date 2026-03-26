@@ -5,29 +5,40 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# History
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+# Shell options
+shopt -s checkwinsize
+
+# Aliases
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
-. "$HOME/.cargo/env"
-
-source /usr/share/fzf/key-bindings.bash
-
-export EDITOR=nvim
-shopt -s autocd
-
+alias grep='grep --color=auto'
 alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias vim=nvim
 alias g='git log --oneline --graph --all'
-alias vim='nvim'
-alias gdb='gdb -x ~/.gdbinit_x'
-alias wifi='nmcli device wifi'
-gr() {
-	git grep -l "$1" | xargs sed -i "s/$1/$2/g"
-}
 
-export PATH=$HOME/Development/custom-scirpts/:$PATH
-export PATH=$HOME/.pack/bin:$PATH
-export PATH=$HOME/go/bin:$PATH
-export PATH=$HOME/.local/bin/:$PATH
+# Directory bookmarks
+alias mark="pwd > ~/.sd"
+alias port='cd $(cat ~/.sd)'
 
-[ -f "/home/walter/.ghcup/env" ] && source "/home/walter/.ghcup/env" # ghcup-env
+# fzf integration
+[ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
+[ -f /usr/share/bash-completion/completions/fzf ] && source /usr/share/bash-completion/completions/fzf
+[ -f /usr/share/fzf/key-bindings.bash ] && source /usr/share/fzf/key-bindings.bash
+
+# Environment
+export EDITOR=nvim
+. "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
+
+# Prompt with exit code indicator
+PS1='\[\033[34m\]\u@\h\[\033[0m\] \[\033[36m\]\w\[\033[0m\] $(if [ $? = 0 ]; then echo "\[\033[32m\]✓"; else echo "\[\033[31m\]✗"; fi)\[\033[0m\] > '
