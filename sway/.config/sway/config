@@ -1,5 +1,8 @@
 # Sway config — see `man 5 sway` for reference
 
+### Includes (load before variables so system overrides apply)
+include /etc/sway/config-vars.d/*
+
 ### Variables
 set $mod Mod4
 set $left h
@@ -13,6 +16,7 @@ default_border pixel 2
 default_floating_border pixel 2
 for_window [class=".*"] border pixel 2
 focus_wrapping no
+focus_on_window_activation urgent
 
 ### Output
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
@@ -81,6 +85,10 @@ mode "resize" {
     bindsym $down resize grow height 10px
     bindsym $up resize shrink height 10px
     bindsym $right resize grow width 10px
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
@@ -115,5 +123,4 @@ exec swayidle -w \
     resume 'swaymsg "output * dpms on"'
 
 ### Includes
-include /etc/sway/config-vars.d/*
 include /etc/sway/config.d/*
