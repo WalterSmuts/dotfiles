@@ -24,6 +24,9 @@ alias g='git log --oneline --graph --all'
 alias mark="pwd > ~/.sd"
 alias port='cd $(cat ~/.sd)'
 
+# Bash completion framework
+[ -f /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+
 # fzf integration
 [ -f /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
 [ -f /usr/share/bash-completion/completions/fzf ] && source /usr/share/bash-completion/completions/fzf
