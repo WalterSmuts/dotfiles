@@ -1,23 +1,64 @@
 configuration {
-    hide-scrollbar: true;
-    fullscreen: true;
-    font: "Hack 30";
-    bw: 0;
-    padding: 400;
-    yoffset: -300;
-    lines: 5;
-
-    kb-row-up: "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
+    display-drun: "Apps";
+    display-window: "Windows";
+    display-combi: "Search";
+    show-icons: true;
     kb-row-down: "Down,Control+j";
+    kb-row-up: "Up,Control+k";
     kb-accept-entry: "Control+m,Return,KP_Enter";
-    terminal: "mate-terminal";
-    kb-remove-to-eol: "Control+Shift+e";
+    kb-remove-to-eol: "Control+shift+e";
     kb-mode-next: "Shift+Right,Control+Tab";
-    kb-mode-previous: "Shift+Left,Control+Shift+Tab,Control+h";
-    kb-remove-char-back: "BackSpace";
+    kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";
+    kb-row-left: "Control+Page_Up";
+    kb-row-right: "Control+Page_Down";
+    font: "sans 11";
 }
 
 * {
-    color-window: argb:cc0d0d0d;
-    color-normal: black;
+    background-color: #1e1e1e;
+    text-color: #ffffff;
+    border-color: #404040;
+    selected-normal-background: #404040;
+    selected-normal-foreground: #ffffff;
+    normal-background: #1e1e1e;
+    normal-foreground: #ffffff;
+    alternate-normal-background: #2a2a2a;
+    alternate-normal-foreground: #ffffff;
+}
+
+window {
+    background-color: @background-color;
+    border: 1px;
+    border-color: @border-color;
+    padding: 5px;
+}
+
+mainbox {
+    border: 0;
+    padding: 0;
+}
+
+inputbar {
+    children: [prompt, textbox-prompt-colon, entry];
+    background-color: #2a2a2a;
+    text-color: @text-color;
+    padding: 8px;
+    border: 0 0 1px 0;
+    border-color: @border-color;
+}
+
+listview {
+    background-color: @background-color;
+    padding: 4px 0px 0px;
+    scrollbar: false;
+}
+
+element {
+    border: 0;
+    padding: 8px;
+}
+
+element.selected {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
 }
