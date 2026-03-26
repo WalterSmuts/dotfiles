@@ -1,7 +1,3 @@
-#
-# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -10,8 +6,6 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
-
-# Shell options
 shopt -s checkwinsize
 
 # Aliases
@@ -37,8 +31,11 @@ alias port='cd $(cat ~/.sd)'
 
 # Environment
 export EDITOR=nvim
-. "$HOME/.cargo/env"
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
 
 # Prompt with exit code indicator
 PS1='\[\033[34m\]\u@\h\[\033[0m\] \[\033[36m\]\w\[\033[0m\] $(if [ $? = 0 ]; then echo "\[\033[32m\]✓"; else echo "\[\033[31m\]✗"; fi)\[\033[0m\] > '
+
+# Source machine-specific config
+[ -f ~/.bashrc.local ] && . ~/.bashrc.local
