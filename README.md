@@ -1,3 +1,24 @@
 # dotfiles
-Example of general display using these config files
-![Why do I need text here?](https://github.com/WalterSmuts/dotfiles/blob/master/example.png "Example Desktop")
+
+Wayland/Sway desktop configuration managed with [GNU Stow](https://www.gnu.org/software/stow/).
+
+## Components
+
+- `sway` — Sway window manager (Wayland)
+- `waybar` — Status bar
+- `rofi` — Application launcher
+- `wofi` — Alternative Wayland launcher
+- `mako` — Notification daemon
+- `kanshi` — Automatic display configuration
+- `nvim` — Neovim with lazy.nvim, nvim-cmp, and rust-analyzer
+- `vim` — Minimal vimrc fallback
+- `bash` — Shell config with vi mode and fzf
+
+## Usage
+
+```sh
+cd ~
+git clone https://github.com/WalterSmuts/dotfiles.git
+cd dotfiles
+stow bash nvim sway waybar rofi wofi mako kanshi vim
+```
