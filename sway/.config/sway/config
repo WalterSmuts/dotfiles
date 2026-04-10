@@ -118,7 +118,7 @@ exec mako
 exec nm-applet --indicator
 exec blueman-applet
 exec udiskie --tray
-exec wl-paste --watch cliphist store
+exec wl-paste --watch cliphist store 2>> /tmp/cliphist.log
 
 ### Autostart — idle and lock
 exec swayidle -w \
