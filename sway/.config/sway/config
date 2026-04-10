@@ -113,7 +113,7 @@ bindsym $mod+c exec cliphist list | rofi -dmenu -p "Clipboard" | cliphist decode
 ### Autostart — services
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec_always pkill waybar; waybar
+exec_always pkill -x waybar; sleep 0.5; waybar
 exec mako
 exec nm-applet --indicator
 exec blueman-applet
