@@ -23,6 +23,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 output DP-3 resolution 3840x2160 scale 2
 
 ### Input
+input type:keyboard {
+    repeat_delay 200
+    repeat_rate 35
+}
 # Lid switch — disable laptop screen when closed
 bindswitch --reload --locked lid:on output eDP-1 disable
 bindswitch --reload --locked lid:off output eDP-1 enable
