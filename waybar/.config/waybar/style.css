@@ -1,0 +1,16 @@
+@import "/etc/xdg/waybar/style.css";
+
+#custom-mail {
+    background-color: #e5a50a;
+    color: #000000;
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+#custom-mail.no-mail {
+    background-color: transparent;
+}
+
+#custom-notification {
+    padding: 0 8px 0 1px;
+}
