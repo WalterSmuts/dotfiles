@@ -53,7 +53,7 @@
         "format-disconnected": "No network"
     },
     "custom/mail": {
-        "exec": "~/.local/bin/mail-status",
+        "exec": "~/.local/bin/mail-notify",
         "return-type": "json",
         "interval": 30,
         "on-click": "swaymsg exec 'foot neomutt'"
