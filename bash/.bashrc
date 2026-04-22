@@ -42,3 +42,6 @@ PS1='\[\033[34m\]\u@\h\[\033[0m\] \[\033[36m\]\w\[\033[0m\] $(if [ $? = 0 ]; the
 
 # Source machine-specific config
 [ -f ~/.bashrc.local ] && . ~/.bashrc.local
+
+# Added by AIM CLI
+export PATH="$HOME/.aim/mcp-servers:$PATH"
